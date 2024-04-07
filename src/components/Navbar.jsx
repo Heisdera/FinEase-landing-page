@@ -4,8 +4,8 @@ import { MenuToggle } from "./MenuToggle";
 import SideMenu from "./SideMenu";
 import { Link } from "react-scroll";
 import { navLinks } from "../data/navLinks";
-import logo from "../assets/logo.svg";
 import Button from "./Button";
+import { pathVariant } from "@/utils/variants";
 
 function Navbar() {
   const [activeNav, setActiveNav] = useState(navLinks[0].path);
@@ -38,7 +38,36 @@ function Navbar() {
   return (
     <nav className="fixed left-0 right-0 top-0 z-30 mx-auto flex h-[72px] max-w-[1280px] items-center justify-between bg-white px-6 md:h-[64px]">
       <div className="flex items-center gap-2">
-        <img src={logo} className="w-8" alt="logo" />
+        <svg
+          width="31"
+          height="31"
+          viewBox="0 0 46 31"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <motion.path
+            variants={pathVariant(0.1)}
+            initial="hidden"
+            animate="visible"
+            d="M12.0732 22.124H3.33749L0.000244141 30.7616H8.53966L12.0732 22.124Z"
+            fill="#5140B1"
+          />
+          <motion.path
+            variants={pathVariant(0.3)}
+            initial="hidden"
+            animate="visible"
+            d="M12.0732 22.2223L15.6068 13.4866H32.6856L29.2012 22.2223H12.0732Z"
+            fill="#4DC7EA"
+          />
+          <motion.path
+            variants={pathVariant(0.5)}
+            initial="hidden"
+            animate="visible"
+            d="M45.6419 0.824463H15.6067L12.1223 9.41296H42.0102L45.6419 0.824463Z"
+            fill="#5140B1"
+          />
+        </svg>
+
         <p className="text-xl font-bold lg:text-[28px]" role="banner">
           Fin
           <span className="text-main-color">Ease</span>

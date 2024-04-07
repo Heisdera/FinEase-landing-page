@@ -35,6 +35,21 @@ export function fadeIn(direction, customDelay) {
   };
 }
 
+export function pathVariant(customDelay) {
+  return {
+    hidden: { opacity: 0, pathLength: 0 },
+    visible: {
+      opacity: 1,
+      pathLength: 1,
+      transition: {
+        duration: 1,
+        ease: "easeInOut",
+        delay: customDelay,
+      },
+    },
+  };
+}
+
 export function populate(i) {
   return {
     hidden: {
