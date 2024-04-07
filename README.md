@@ -1,7 +1,3 @@
-# Craving Food - A presentational website
+# FinEase - A presentational website
 
-After framer motion animations - [Craving Food v2](https://craving-food-landing-page.vercel.app/)
-
-Before framer motion animations - [Craving Food v1](https://craving-food-landing-page-v1.netlify.app/)
-
-Designed by - [Mhiz_Jeni](https://twitter.com/mhiz_jeni/status/1750132003834405058)
+Figma Design by - [Miss Oluwakemi Jegede](https://twitter.com/Oluwakemi_J1/status/1726903844448116785?t=BOFPSGPP0LpHsi1MmLvYLw&s=19)
