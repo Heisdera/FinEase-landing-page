@@ -67,9 +67,7 @@
   opacity: 0.7;
 }
 
-.slick-prev:hover,
 .slick-prev:focus,
-.slick-next:hover,
 .slick-next:focus {
   color: transparent;
   outline: none;
