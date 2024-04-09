@@ -1,3 +1,4 @@
+import ScrollToTopButton from "./components/ScrollToTopButton";
 import CustomersReview from "./components/CustomersReview";
 import FAQs from "./components/FAQs";
 import Features from "./components/Features";
@@ -25,6 +26,8 @@ function App() {
       <FAQs />
 
       <Footer />
+
+      <ScrollToTopButton />
     </div>
   );
 }

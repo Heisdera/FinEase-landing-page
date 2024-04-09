@@ -6,9 +6,10 @@ import { Link } from "react-scroll";
 import { navLinks } from "../data/navLinks";
 import Button from "./Button";
 import { pathVariant } from "@/utils/variants";
+import useScrollToTop from "@/utils/useScrollToTop";
 
 function Navbar() {
-  const [navState, setNavState] = useState(false);
+  const { isScrolling } = useScrollToTop();
   const [activeNav, setActiveNav] = useState(navLinks[0].path);
   const [nav, setNav] = useState(false);
 
@@ -20,14 +21,6 @@ function Navbar() {
 
   function handleToggleNav() {
     setNav((show) => !show);
-  }
-
-  function handleNavScroll() {
-    if (window.scrollY > 15) {
-      setNavState(true);
-    } else {
-      setNavState(false);
-    }
   }
 
   useEffect(function () {
@@ -44,19 +37,11 @@ function Navbar() {
     };
   }, []);
 
-  useEffect(() => {
-    window.addEventListener("scroll", handleNavScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleNavScroll);
-    };
-  }, []);
-
   return (
-    <div
-      className={`sticky left-0 right-0 top-0 z-30 h-[72px] bg-white px-6 ${navState && "shadow-md"}`}
+    <nav
+      className={`sticky left-0 right-0 top-0 z-30 h-[72px] bg-white px-6 ${isScrolling && "drop-shadow-md"}`}
     >
-      <nav className="mx-auto flex h-[72px] max-w-[1280px] items-center justify-between md:h-[64px]">
+      <div className="mx-auto flex h-[72px] max-w-[1280px] items-center justify-between md:h-[64px]">
         <div className="flex items-center gap-2">
           <svg
             width="31"
@@ -145,8 +130,8 @@ function Navbar() {
             toggleNav={handleToggleNav}
           />
         </div>
-      </nav>
-    </div>
+      </div>
+    </nav>
   );
 }
 
