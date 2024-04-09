@@ -13,21 +13,21 @@ import HeroImg9 from "../assets/hero-9.png";
 
 function Hero() {
   return (
-    <section className="px-3 pt-[78px] sm:px-7" id="home">
+    <section className="px-3 sm:px-7" id="home">
       <div className="mx-auto grid max-w-[1240px] lg:h-[400px] lg:grid-cols-2">
-        <div className="flex flex-col justify-center py-3 md:py-8">
+        <div className="max-xs:py-4 flex flex-col justify-center py-3 md:py-8">
           <motion.h1
             variants={fadeIn("down", 0.3)}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="text-center leading-[1.2] lg:text-left"
+            className="max-xs:leading-[1.4] text-center leading-[1.2] lg:text-left"
           >
-            <span className="block text-[37px] font-medium text-main-color md:text-3xl lg:text-4xl xl:text-[42px]">
+            <span className="max-xs:text-[30px] block text-[37px] font-medium text-main-color md:text-3xl lg:text-4xl xl:text-[42px]">
               Intelligent Banking To
             </span>
 
-            <span className="block text-[34px] font-semibold text-black md:text-3xl lg:text-4xl xl:text-[42px]">
+            <span className="max-xs:text-[27px] block text-[34px] font-semibold text-black md:text-3xl lg:text-4xl xl:text-[42px]">
               Manage Your Top Up Money & Transactions.
             </span>
           </motion.h1>
@@ -37,7 +37,7 @@ function Hero() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="pb-1 pt-4 text-center text-[13px] font-medium leading-tight lg:text-left xl:text-base"
+            className="max-xs:text-xs max-xs:pt-2 max-xs:leading-normal pb-1 pt-4 text-center text-[13px] font-medium leading-tight lg:text-left xl:text-base"
           >
             <span className="block">
               We will help you manage your money and transactions easily.
@@ -66,13 +66,13 @@ function Hero() {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
-              className="absolute -left-5 top-28 w-[140px]"
+              className="max-xs:w-[130px] absolute -left-5 top-28 w-[140px]"
             >
               <div className="relative">
                 <img src={HeroImg1} alt="hero-person-1" />
                 <img
                   src={HeroImg2}
-                  className="absolute -bottom-12"
+                  className="absolute -bottom-12 max-sm:-bottom-9"
                   alt="account-balance-card"
                 />
               </div>
@@ -83,7 +83,7 @@ function Hero() {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
-              className="absolute left-[100px] top-56 z-10 w-[100px]"
+              className="max-xs:w-[85px] max-xs:left-[90px] absolute left-[100px] top-56 z-10 w-[100px]"
             >
               <img src={HeroImg5} alt="settings-card" />
             </motion.div>
@@ -93,7 +93,7 @@ function Hero() {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
-              className="absolute right-0 top-40 z-10 w-[170px]"
+              className="max-xs:w-[145px] absolute right-0 top-40 z-10 w-[170px]"
             >
               <img src={HeroImg3} alt="payment-card" />
             </motion.div>
@@ -103,7 +103,7 @@ function Hero() {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
-              className="absolute left-[92px] top-14 z-10 w-[100px]"
+              className="max-xs:w-[90px] max-xs:left-[80px] absolute left-[92px] top-14 z-10 w-[100px]"
             >
               <img src={HeroImg4} alt="monthly-expense-report" />
             </motion.div>
@@ -113,7 +113,7 @@ function Hero() {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
-              className="absolute right-6 top-14 z-10 w-[110px]"
+              className="max-xs:w-[97px] absolute right-6 top-14 z-10 w-[110px]"
             >
               <motion.img src={HeroImg6} alt="analytics-chart" />
             </motion.div>
@@ -123,7 +123,7 @@ function Hero() {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
-              className="absolute right-36 top-24 z-10 w-[50px]"
+              className="max-xs:w-[45px] max-xs:right-[125px] absolute right-36 top-24 z-10 w-[50px]"
             >
               <motion.img src={HeroImg8} alt="hero-person-3" />
             </motion.div>
@@ -133,7 +133,7 @@ function Hero() {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
-              className="absolute left-0 top-8 z-10 w-[50px]"
+              className="max-xs:w-[45px] absolute left-0 top-8 z-10 w-[50px]"
             >
               <motion.img src={HeroImg9} alt="hero-person-4" />
             </motion.div>
@@ -143,7 +143,7 @@ function Hero() {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
-              className="absolute right-28 top-[290px] z-10 w-[50px]"
+              className="max-xs:w-[45px] max-xs:top-[270px] max-xs:right-[105px] absolute right-28 top-[290px] z-10 w-[50px]"
             >
               <motion.img src={HeroImg7} alt="hero-person-2" />
             </motion.div>

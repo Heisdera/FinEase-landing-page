@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import "../carouselStyle/slick-theme.css";
 import { data } from "../data/usersReviewsData";
 import { fadeIn } from "../utils/variants";
 
@@ -87,7 +87,7 @@ function CustomersReview() {
         </motion.div>
       </div>
 
-      <button className="mt-6 justify-self-center whitespace-nowrap rounded-md bg-main-color px-4 py-2.5 text-xs font-medium text-white transition-all duration-100 hover:bg-[#3f1294] md:hidden">
+      <button className="max-xs:mt-20 mt-6 justify-self-center whitespace-nowrap rounded-md bg-main-color px-4 py-2.5 text-xs font-medium text-white transition-all duration-100 hover:bg-[#3f1294] md:hidden">
         See more
         <span className="pl-2 font-semibold">&rarr;</span>
       </button>

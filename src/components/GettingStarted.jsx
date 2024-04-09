@@ -19,7 +19,7 @@ function GettingStarted() {
         </p>
       </div>
 
-      <div className="grid gap-4 rounded-xl bg-main-color px-11 py-8 sm:grid-cols-2 sm:gap-5 sm:px-5 sm:py-5 md:px-6 md:py-8 lg:grid-cols-3">
+      <div className="max-xs:px-7 max-xs:py-6 grid gap-4 rounded-xl bg-main-color px-11 py-8 sm:grid-cols-2 sm:gap-5 sm:px-5 sm:py-5 md:px-6 md:py-8 lg:grid-cols-3">
         <Card
           imgSrc={RegisterIcon}
           alt="wallet-icon"

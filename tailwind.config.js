@@ -7,6 +7,9 @@ export default {
     },
 
     extend: {
+      screens: {
+        xs: "395px",
+      },
       container: {
         center: true,
         padding: "2rem",

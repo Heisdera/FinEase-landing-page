@@ -56,9 +56,9 @@ function Specials() {
         initial="hidden"
         viewport={{ once: true }}
         whileInView="visible"
-        className="relative mb-[20px] h-[230px] w-[92%] rounded-2xl bg-[#eee] drop-shadow-md md:row-start-1 md:ml-1 md:h-[260px] lg:ml-6"
+        className="max-xs:mb-6 max-xs:h-[245px] relative mb-5 h-[230px] w-[92%] rounded-2xl bg-[#eee] drop-shadow-md md:row-start-1 md:ml-1 md:h-[260px] lg:ml-6"
       >
-        <div className="absolute -right-6 left-6 top-6 lg:-left-6 lg:right-6">
+        <div className="max-xs:top-4 max-xs:left-4 absolute -right-6 left-6 top-6 lg:-left-6 lg:right-6">
           <div className="flex flex-col gap-3">
             <motion.div
               initial={{
